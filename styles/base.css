@@ -65,3 +65,12 @@ img {
     width: 100px;
     height: auto;
 }
+
+a:hover {
+    color: #0A2463;
+}
+
+a {
+    color: #FFFAFF;
+    text-decoration: none;
+}
