@@ -9,7 +9,7 @@ header {
     color: #FFFAFF;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 nav {
@@ -24,7 +24,11 @@ nav {
 h3 {
     background-color: #0A2463;
     color: #FFFAFF;
-    padding: 10px;
+    padding: 20px;
+    margin: -20px;
+}
+
+section {
     border-style: groove;
 }
 
@@ -36,7 +40,7 @@ footer {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -49,6 +53,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 40px;
 }
 
 ul {
