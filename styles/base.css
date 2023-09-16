@@ -64,6 +64,7 @@ ul {
 img {
     width: 100px;
     height: auto;
+    margin-right: 50px;
 }
 
 a:hover {
