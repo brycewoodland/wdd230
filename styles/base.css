@@ -1,25 +1,36 @@
 body {
-    font-family: Lucida Console;
-    background-color: #FFFAFF;
+    font-family: 'Lucida Console';
+    background-color: black;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 header {
     display: flex;
+    flex-direction: row;
     background-color: #0A2463;
     color: #FFFAFF;
     align-items: center;
     justify-content: center;
-
 }
 
-nav {
-    background-color: black;
+nav ul {
+    background-color: #0A2463;
     color: #FFFAFF;
     text-align: center;
-    font-size: large;
-    margin: 0px;
+    margin-top: 10px;
     padding: 50px;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+nav ul li {
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+h2 {
+    color: #FFFAFF;
 }
 
 h3 {
@@ -69,10 +80,12 @@ ul {
     color: #FFFAFF;
 }
 
-img {
+header img {
     width: 100px;
     height: auto;
     margin-right: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 a:hover {
