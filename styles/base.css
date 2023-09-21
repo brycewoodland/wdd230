@@ -30,7 +30,8 @@ h3 {
 
 section {
     border-style: groove;
-    background-color: black;
+    background-color: #FFFAFF;
+    color: black;
 }
 
 footer {
@@ -41,7 +42,7 @@ footer {
 }
 
 main {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -73,16 +74,34 @@ a:hover {
     color: #546ca2;
 }
 
-a {
+nav a {
     color: #FFFAFF;
     text-decoration: none;
 }
 
+section a:hover {
+    color: black;
+    background-color: #546ca2;
+}
+
+section a {
+    color: black;
+    text-decoration: none;
+}
+
+section p {
+    color: black;
+}
+
 li {
     margin: 15px;
-    color: #FFFAFF;
+    color: black;
 }
 
 p {
     color: #FFFAFF;
+}
+
+.card {
+    color: black;
 }
