@@ -16,6 +16,7 @@ nav {
     background-color: black;
     color: #FFFAFF;
     text-align: center;
+    font-size: large;
     margin: 0px;
     padding: 50px;
     justify-content: space-between;
@@ -31,6 +32,10 @@ h3 {
 section {
     border-style: groove;
     background-color: black;
+}
+
+section p {
+    font-size: medium;
 }
 
 footer {
@@ -60,6 +65,7 @@ main {
 ul {
     list-style-type: none;
     text-align: left;
+    font-size: medium;
     color: #FFFAFF;
 }
 
