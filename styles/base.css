@@ -1,17 +1,24 @@
 body {
     font-family: 'Lucida Console';
     background-color: black;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 header {
     display: flex;
-    flex-direction: row;
     background-color: #0A2463;
     color: #FFFAFF;
     align-items: center;
     justify-content: center;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin-right: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 nav ul {
@@ -24,6 +31,7 @@ nav ul {
 }
 
 nav ul li {
+    display: block;
     justify-content: center;
     text-align: center;
     font-size: 20px;
@@ -40,20 +48,13 @@ h3 {
     margin: -20px;
 }
 
-section {
+main section {
     border-style: groove;
     background-color: black;
 }
 
-section p {
+main section p {
     font-size: medium;
-}
-
-footer {
-    background-color: #0A2463;
-    color: #FFFAFF;
-    text-align: center;
-    padding: 10px;
 }
 
 main {
@@ -80,14 +81,6 @@ ul {
     color: #FFFAFF;
 }
 
-header img {
-    width: 100px;
-    height: auto;
-    margin-right: 50px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 a:hover {
     color: #546ca2;
 }
@@ -104,4 +97,11 @@ li {
 
 p {
     color: #FFFAFF;
+}
+
+footer {
+    background-color: #0A2463;
+    color: #FFFAFF;
+    text-align: center;
+    padding: 10px;
 }
