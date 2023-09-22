@@ -42,14 +42,20 @@ main section h4 {
 }
 
 .section1 img {
-    width: auto;
+    width: 300px;
     height: 400px;
 }
 
 .section2 img {
-    width: auto;
+    width: 300px;
     height: 400px;
 }
+
+.section3 img {
+    width: 300px;
+    height: 400px;
+}
+
 footer {
     background-color: black;
     color: white;
