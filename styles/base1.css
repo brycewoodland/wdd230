@@ -68,7 +68,7 @@ main section h3 {
 main section li {
     color: white;
     margin: 2%;
-    font-size: larege;
+    font-size: large;
 }
 
 main section a {
@@ -85,6 +85,9 @@ footer {
     color: white;
     padding: 1rem;
     text-align: center;
-    font-size: medium;
     margin-bottom: -25px;
+}
+
+footer p {
+    font-size: medium;
 }
