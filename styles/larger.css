@@ -1,6 +1,23 @@
 @media screen and (min-width: 850px){
 
     nav ul {
-        display: flex;
+        flex-direction: row;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .information {
+        grid-column: 2 / 3;
+    }
+
+    .learningActivities {
+        grid-column: 1 / 2;
+    }
+
+    main section {
+        margin: 1rem .5rem;
     }
 }

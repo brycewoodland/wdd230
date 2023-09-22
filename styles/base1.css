@@ -1,38 +1,84 @@
-@import url('https://fonts.google.com/specimen/Roboto+Condensed');
+@import url('https://fonts.google.com/specimen/Lucida+Console');
 
 body {
     margin: 0 auto;
-    font-family: 'Roboto Condensed';
-    background-color: #C7EBDF;
-    max-width: 1200px;
+    font-family: 'Lucida Console';
+    background-color: black;
+    max-width: 1000px;
 }
 
 header {
-    background-color: black;
+    display: flex;
+    background-color: #0A2463;
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
+header img {
+    width: 100px;
+    justify-content: space-around;
+    margin-right: 25%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #0A2463;
+    text-align: center;
+    list-style: none;
+    padding: 1rem;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    margin-top: 5%;
+}
+
+nav ul a:hover{
+    box-shadow: inset 400px 400px rgb(88, 98, 125);
+}
+
 main section {
-    border: groove black;
-    margin: 1em;
+    border: groove gray;
+    margin: 1rem 0rem;
 }
 
 main section p {
     padding: 1rem;
 }
+main h2 {
+    color: white;
+    text-align: center;
+}
 
 main section h3 {
-    background-color: black;
+    background-color: #0A2463;
     color: white;
     text-align: center;
     padding: 1rem;
     margin-block-start: 0px;
 }
 
+main section li {
+    color: white;
+    margin: 2%;
+}
+
+main section a {
+    color: white;
+}
+
+main section p {
+    color: white;
+    text-align: center;
+}
+
 footer {
-    background-color: black;
+    background-color: #0A2463;
     color: white;
     padding: 1rem;
     text-align: center;
