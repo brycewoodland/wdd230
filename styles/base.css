@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lucida+Console&display=swap');
 
 body {
     margin: 0 auto;
-    font-family: 'Ubuntu Mono';
+    font-family: 'Lucida Console';
     background-color: black;
     max-width: 1000px;
 }
@@ -50,7 +50,7 @@ main section {
 
 main section p {
     padding: 1rem;
-    font-size: large;
+    font-size: medium;
 }
 
 main h2 {
@@ -69,7 +69,7 @@ main section h3 {
 main section li {
     color: white;
     margin: 2%;
-    font-size: large;
+    font-size: medium;
 }
 
 main section a {
