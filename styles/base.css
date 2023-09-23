@@ -24,11 +24,12 @@ header img {
 nav ul{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #0A2463;
     list-style: none;
     padding: 1rem;
+    height: 150px;
 }
 
 nav ul li a{
