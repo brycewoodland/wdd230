@@ -2,6 +2,7 @@
 
     nav ul {
         flex-direction: row;
+        height: 50px;
     }
 
     main {
