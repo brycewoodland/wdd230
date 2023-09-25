@@ -8,8 +8,4 @@
     .section3 {
         grid-column: 3 / 4;
     }
-
-    .section3 img {
-        width: auto;
-    }
 }
