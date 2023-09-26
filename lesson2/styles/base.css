@@ -3,7 +3,7 @@
 body {
     margin: 0 auto;
     font-family: 'Roboto Condensed';
-    background-color: #C7EBDF;
+    background-color: white;
     max-width: 1200px;
 }
 
@@ -12,11 +12,14 @@ header {
     color: white;
     text-align: center;
     padding: 1rem;
+    border-radius: 15px;
 }
 
 main section {
     border: groove black;
+    border-radius: 15px;
     margin: 1em;
+    background-color: #C7EBDF;
 }
 
 main section p {
@@ -35,6 +38,7 @@ main section h3 {
     text-align: center;
     padding: 1rem;
     margin-block-start: 0px;
+    border-radius: 7px;
 }
 
 .section1 img {
@@ -59,4 +63,5 @@ footer {
     text-align: center;
     margin-bottom: -25px;
     font-size: large;
+    border-radius: 15px;
 }
