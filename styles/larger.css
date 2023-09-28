@@ -10,6 +10,14 @@
         grid-template-columns: 2fr 1fr;
     }
 
+    .menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing {
+        display: none;
+    }
+
+    #nav-menu {
+        display: flex;
+    }
+
     .information {
         grid-column: 2 / 3;
     }

@@ -93,6 +93,24 @@ main section p {
     background-color: rgb(88, 98, 125); ;
 }
 
+.menu-hide, .menu-show {
+    display: none;
+    margin: .5rem 0 0 .5rem;
+}
+
+.menu-hide.showing, .menu-show.showing {
+    display: block;
+}
+
+#nav-menu {
+    display: none;
+}
+
+#nav-menu.showing {
+    display: flex;
+}
+
+
 footer {
     background-color: #0A2463;
     color: white;
