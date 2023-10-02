@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Sans+Pro:wght@600&display=swap');
 
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #096B72;
+    --secondary-color: #171A21;
+    --accent-color: #ECF0F1;
+}
+
 header {
     text-align: center;
     color: #ECF0F1;
@@ -12,6 +19,7 @@ body {
     max-width: 800px;
     font-family: Montserrat;
     margin: 0 auto;
+    color: #171A21;
 }
 
 main section h3 {
@@ -23,9 +31,46 @@ main section p {
     font-family: sans-serif;
 }
 
+main section p b {
+    font: bold;
+}
+
 .section1 {
     color: #096B72;
 }
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  .colors th {
+    background-color: #999;
+  }
+
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+
+  .primary {
+    background-color: var(--primary-color);
+  }
+
+  .secondary {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+
+  .accent {
+    background-color: var(--accent-color);
+  }
+
+  main section h4 {
+    padding: 1rem;
+  }
 
 footer {
     text-align: center;
