@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Sans+Pro:wght@600&display=swap');
+
+header {
+    text-align: center;
+    color: #ECF0F1;
+    background-color: #096B72;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+body {
+    max-width: 800px;
+    font-family: Montserrat;
+    margin: 0 auto;
+}
+
+main section h3 {
+    padding: 1rem;
+}
+
+main section p {
+    margin-left: 15px;
+    font-family: sans-serif;
+}
+
+.section1 {
+    color: #096B72;
+}
+
+footer {
+    text-align: center;
+    background-color: #096B72;
+    color: #ECF0F1;
+    padding: 1rem;
+    border-radius: 15px;
+}
