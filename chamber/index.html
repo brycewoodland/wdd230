@@ -5,9 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Home Page for Salt Lake City Chamber of Commerce - WDD230">
     <meta name="author" content="Bryce Woodland">
+    <meta property="og:url" content="https://brycewoodland.github.io/wdd230/chamber/index.html"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bryce Woodland - WDD 230 - Chamber of Commerce" />
+    <meta property="og:description" content="WDD 230 - Salt Lake City Chamber of Commerce Created by Bryce Woodland" />
+    <meta property="og:image" content="images/ME.png" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <title>Salt Lake City Chamber</title>
+    <script defer src="scripts/lastModifcation.js"></script>
 </head>
 <body>
-    
+    <header>
+        <p><img src="images/logo.jpeg" alt="logo"></p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home-main">
+        <section id="hero" class="home-section">
+            <img src="https://placehold.co/1200x400" alt="heroImage">
+            <!--Call to Action-->
+            <button type="button">Call to Action</button>
+            <h1>Salt Lake City Chamber</h1>
+        <hr>
+        </section>
+        <section id="currentEvent" class="home-section">
+            <h2>Current Event</h2>
+            <p><img src="https://placehold.co/350x300" alt="currentEvent"></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quos libero neque ipsum quis 
+                laboriosam eum ut accusamus sapiente, sunt labore fugiat placeat, velit molestiae ullam facere. 
+                Labore velit culpa animi atque facere tempora ipsam, obcaecati, voluptatibus ratione ipsa numquam 
+                fugit beatae reiciendis inventore enim ut, accusamus nostrum? Quo, ex!</p>
+        </section>
+        <section id="weatherCard" class="home-section">
+            <h2>Weather</h2>
+            <p><img src="https://placehold.co/350x300" alt="weatherCard"></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, reiciendis molestiae perferendis 
+                laudantium similique et saepe distinctio ex maiores? Eum, hic. Nemo odio fugiat sit tenetur illum 
+                veritatis quibusdam corrupti quos minima quam, aut, quasi officia nam deserunt aliquid obcaecati.</p>
+        </section>
+        <section id="spotlight1" class="section-spotlights">
+            <h2>Spotlight</h2>
+            <p><img src="https://placehold.co/200x200" alt="spotlight1"></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, libero ut? Eligendi asperiores, 
+                natus sapiente fuga voluptates adipisci eius nobis!</p>
+        </section>
+        <section id="spotlight2" class="section-spotlights">
+            <p><img src="https://placehold.co/200x200" alt="spotlight2"></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut doloremque nisi deleniti quae a voluptatum quo sit 
+                vero incidunt sequi!/p>
+        </section>
+    </main>
+    <footer>
+        <p><img src="images/logo.jpeg" alt="logo"></p>
+        <p>Contact Information: </p>
+        <hr>
+        <p>Bryce Woodland - WDD230 | &copy; <span id="currentDate"></span> | Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>

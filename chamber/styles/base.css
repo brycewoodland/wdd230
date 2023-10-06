@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Montserrat&display=swap');
+
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #ECF0F1;
+    padding: 1rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #096B72;
+    padding: 1rem;
+    font-family: Montserrat;
+}
+
+header p img {
+    width: 150px;
+    height: 150px;
+}
+nav ul {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ECF0F1;
+    font-size: large;
+    font: bold;
+}
+
+nav ul li {
+    list-style: none;
+    margin-top: 50px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+section h1 {
+    text-align: center;
+}
+
+#hero img {
+    width: 100%;
+}
+
+main section h2 {
+    text-align: center;
+    padding: 1rem;
+    font-family: montserrat;
+}
+
+main section p img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#currentEvent img, #weatherCard img{
+    border-radius: 50%;
+}
+
+#spotlight1 img, #spotlight2 img{
+    border-radius: 50%;
+}
+main section p {
+    font-family: cabin;
+}
+
+footer {
+    font-family: montserrat;
+    background-color: #096B72;
+    color: #ECF0F1;
+    padding: 1rem;
+}
+
+footer p img {
+    width: 100px;
+    height: 100px;
+}
+
+footer p {
+    text-align: center;
+}
