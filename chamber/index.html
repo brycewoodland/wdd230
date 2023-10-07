@@ -17,13 +17,15 @@
     <link rel="stylesheet" href="styles/larger.css">
     <title>Salt Lake City Chamber</title>
     <script defer src="scripts/lastModifcation.js"></script>
+    <script defer src="scripts/hamburger-menu.js"></script>
 </head>
 <body>
     <header>
         <p><img src="images/logo.jpeg" alt="logo"></p>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
+            <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
+            <ul id="nav-menu">
+                <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">Discover</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
@@ -55,16 +57,17 @@
                 veritatis quibusdam corrupti quos minima quam, aut, quasi officia nam deserunt aliquid obcaecati.</p>
         </section>
         <section id="spotlight1" class="section-spotlights">
-            <h2>Spotlight</h2>
+            <h2>Spotlight 1:</h2>
             <p><img src="https://placehold.co/200x200" alt="spotlight1"></p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, libero ut? Eligendi asperiores, 
                 natus sapiente fuga voluptates adipisci eius nobis!</p>
         </section>
         <section id="spotlight2" class="section-spotlights">
+            <h2>Spotlight 2:</h2>
             <p><img src="https://placehold.co/200x200" alt="spotlight2"></p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut doloremque nisi deleniti quae a voluptatum quo sit 
-                vero incidunt sequi!/p>
-        </section>
+           vero incidunt sequi!/p>
+    </section>
     </main>
     <footer>
         <p><img src="images/logo.jpeg" alt="logo"></p>
