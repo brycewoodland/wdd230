@@ -90,6 +90,8 @@ footer p {
     text-align: center;
 }
 
+/* hamburger menu */
+
 .active {
     color: yellow;
 }
