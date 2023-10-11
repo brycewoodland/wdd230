@@ -5,6 +5,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    nav ul {
+        flex-direction: row;
+    }
+
     .home-section {
         grid-column: 1 / 3;
     }

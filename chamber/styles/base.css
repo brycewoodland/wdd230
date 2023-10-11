@@ -21,8 +21,8 @@ header p img {
 }
 nav ul {
     display: flex;
-    text-align: center;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     padding: 1rem;
 }
