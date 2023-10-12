@@ -2,25 +2,24 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('#button');
 const list = document.querySelector('#list');
 
-button.addEventListener('click', function(){
-    if (input.value != '')
+button.addEventListener('click', function() {
+    if (input.value == '')
     {
-        console.log('Please enter a scripture.');
+        input.focus()
+        return
     }
-});
+    
+    let li = document.createElement('li');
+    let deletebutton = document.createElement('button');
+    li.textContent = input.value;
+    deletebutton.textContent = '❌';
+    li.appendChild(deletebutton);
+    list.appendChild(li);
 
-const li = document.createElement('li');
-const deleteButton = document.createElement('button');
+    deletebutton.addEventListener('click', function (){
+        li.remove();
+    })
 
-li.textContent = input.value;
-deleteButton.textContent = X;
-li.append(deleteButton);
-list.append(li);
-
-deleteButton.addEventListener('click', () => {
-    list.removeChild(li);
     input.focus();
+    input.value = '';
 });
-
-input.focus();
-input.value = '';
