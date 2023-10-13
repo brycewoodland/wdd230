@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Montserrat&display=swap');
 
+:root {
+    --background-color: #ECF0F1;
+    --text-color: #ECF0F1;
+    --paragraph-color: #171A21;
+    --header-background: #096B72;
+    --hover-color: yellow;
+}
+
 body {
     margin: 0 auto;
     max-width: 1200px;
-    background-color: #ECF0F1;
+    background-color: var(--background-color);
     padding: 1rem;
 }
 
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-color: #096B72;
+    background-color: var(--header-background);
     padding: 1rem;
     font-family: Montserrat;
 }
@@ -29,7 +37,7 @@ nav ul {
 
 nav ul li a{
     text-decoration: none;
-    color: #ECF0F1;
+    color: var(--text-color);
     font-size: large;
     font: bold;
 }
@@ -40,11 +48,12 @@ nav ul li {
 }
 
 nav a:hover {
-    color: yellow;
+    color: var(--hover-color);
 }
 
 section h1 {
     text-align: center;
+    color: var(--paragraph-color);
 }
 
 #hero img {
@@ -55,6 +64,7 @@ main section h2 {
     text-align: center;
     padding: 1rem;
     font-family: montserrat;
+    color: var(--paragraph-color);
 }
 
 main section p img {
@@ -72,12 +82,13 @@ main section p img {
 }
 main section p {
     font-family: cabin;
+    color: var(--paragraph-color);
 }
 
 footer {
     font-family: montserrat;
-    background-color: #096B72;
-    color: #ECF0F1;
+    background-color: var(--header-background);
+    color: var(--text-color);
     padding: 1rem;
 }
 
@@ -116,4 +127,18 @@ footer p {
 nav button {
     width: 50px;
     height: 50px;
+}
+
+/*Dark Mode */
+
+#dark-mode {
+    position: absolute;
+    right: 2.5rem;
+    top: 6rem;
+    background-color: var(--background-color);
+}
+
+button {
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
