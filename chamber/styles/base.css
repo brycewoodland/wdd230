@@ -57,7 +57,13 @@ section h1 {
 }
 
 #hero img {
-    width: 100%;
+    width: 1200px;
+    height: 500px;
+}
+
+#weatherCard img {
+    width: 350;
+    height: 300;
 }
 
 main section h2 {
@@ -75,6 +81,8 @@ main section p img {
 
 #currentEvent img, #weatherCard img{
     border-radius: 50%;
+    width: 400px;
+    height: 300px;
 }
 
 #spotlight1 img, #spotlight2 img{
