@@ -30,4 +30,11 @@
         grid-column: 2 / 3;
         padding: 2rem;
     }
+
+    /* Call to Action */
+    #callToAction {
+        position: absolute;
+        left: 350px;
+        bottom: 10px;
+    }
 }

@@ -57,13 +57,28 @@ section h1 {
 }
 
 #hero img {
-    width: 1200px;
+    width: 100%;
     height: 500px;
+}
+
+#callToAction {
+    position: absolute;
+    left: 200px;
+    bottom: 10px;
+    padding: 1rem;
 }
 
 #weatherCard img {
     width: 350;
     height: 300;
+}
+
+#weatherCard p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 main section h2 {
@@ -88,6 +103,7 @@ main section p img {
 #spotlight1 img, #spotlight2 img{
     border-radius: 50%;
 }
+
 main section p {
     font-family: cabin;
     color: var(--paragraph-color);
@@ -147,6 +163,6 @@ nav button {
 }
 
 button {
-    color: var(--text-color);
+    color: var(--paragraph-color);
     background-color: var(--background-color);
 }
