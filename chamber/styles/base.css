@@ -102,6 +102,8 @@ main section p img {
 
 #spotlight1 img, #spotlight2 img{
     border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
 
 main section p {
