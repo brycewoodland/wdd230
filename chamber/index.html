@@ -19,10 +19,11 @@
     <script defer src="scripts/lastModifcation.js"></script>
     <script defer src="scripts/hamburger-menu.js"></script>
     <script defer src="scripts/darkmode.js"></script>
+    <script defer src="scripts/windchill.js"></script>
 </head>
 <body>
     <header>
-        <p><img src="images/logo.jpeg" alt="logo"></p>
+        <p><img src="images/logo.webp" alt="logo"></p>
         <nav>
             <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
             <ul id="nav-menu">
@@ -37,7 +38,11 @@
 
     <main id="home-main">
         <section id="hero" class="home-section">
-            <img src="images/hero-img.jpg" alt="heroImage">
+            <picture>
+                <source media="(max-width: 900px)" srcset="images/wdd230-org-640.webp">
+                <source media="(max-width: 1200px)" srcset="images/wdd230-org-1024.webp">
+                <img src="images/wdd230-org-1200.webp" alt="heroImage">
+            </picture>
             <!--Call to Action-->
             <button type="button" id="callToAction">Join the Chamber</button>
             <h1>Salt Lake City Chamber of Commerce</h1>
@@ -45,7 +50,7 @@
         </section>
         <section id="currentEvent" class="home-section">
             <h2>Swing into Action Golf Fundraiser</h2>
-            <p><img src="images/currentEvent.jpg" alt="currentEvent"></p>
+            <p><img src="images/currentEvent.webp" alt="currentEvent"></p>
             <p>Join us for a "Swing into Action Golf Fundraiser"! Are you 
                 ready to tee of for a great cause? Grab your clubs and come 
                 join us for an unforgettable occasion. Our Golf Fundraiser
@@ -54,29 +59,30 @@
         </section>
         <section id="weatherCard" class="home-section">
             <h2>Weather</h2>
-            <p><img src="images/weather-icon.jpg" alt="weatherCard"></p>
-            <p><span>33</span>&deg;F</p>
+            <p><img src="images/weather-icon.webp" alt="weatherCard"></p>
+            <p><span id="temperature">33</span>&deg;F</p>
             <p>Partly Cloudy</p>
+            <p>Wind Speed: <span id="windspeed">10</span> mph</p>
             <p>Humidity: 35%</p>
-            <p>Wind Chill: N/A</p>
+            <p> Wind Chill: <span id="windchill">N/A</span>&deg;F</p>
         </section>
         <section id="spotlight1" class="section-spotlights">
             <h2>ABC Company</h2>
-            <p><img src="images/spotlight1.jpg" alt="spotlight1"></p>
+            <p><img src="images/spotlight1.webp" alt="spotlight1"></p>
             <p>"Committed to Excellence Since 1981"</p>
             <hr>
             <p>801-265-9330 | website</p>
         </section>
         <section id="spotlight2" class="section-spotlights">
             <h2>XYZ Corporation</h2>
-            <p><img src="images/spotlight2.jpg" alt="spotlight2"></p>
+            <p><img src="images/spotlight2.webp" alt="spotlight2"></p>
             <p>"Transforming Industries with Sustainable Solutions"</p>
             <hr>
             <p>385-232-4544 | website</p>
     </section>
     </main>
     <footer>
-        <p><img src="images/logo.jpeg" alt="logo"></p>
+        <p><img src="images/logo.webp" alt="logo"></p>
         <p><br> 456 State St. <br> Salt Lake City, Utah 84123</p>
         <p>Contact Information: bwoodlan@byui.edu || 801-755-5000 </p>
         <hr>

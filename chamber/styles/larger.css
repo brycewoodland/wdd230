@@ -54,9 +54,10 @@
     /*Call to Action*/
     #callToAction {
         position: absolute;
-        left: 700px;
-        bottom: 10px;
+        left: 45%;
+        bottom: 5%;
         padding: 1rem;
+        font-size: 1.5rem;
     }
 }
 
