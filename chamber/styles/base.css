@@ -54,8 +54,8 @@ section h1 {
 
 #callToAction {
     position: absolute;
-    left: 40%;
-    bottom: 25%;
+    left: 35%;
+    bottom: 45%;
     padding: 1rem;
 }
 
@@ -177,3 +177,4 @@ button {
     background-color: black;
     color: white;
 }
+

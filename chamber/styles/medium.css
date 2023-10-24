@@ -33,7 +33,7 @@
 
     /* Call to Action */
     #callToAction {
-        position: absolute;
+        position: relative;
         left: 45%;
         bottom: 15%;
         font-size: 1rem;
