@@ -52,13 +52,6 @@ section h1 {
     color: var(--paragraph-color);
 }
 
-#hero img {
-    grid-column: 1 / 3;
-    width: 100%;
-    position: relative;
-    text-align: center;
-}
-
 #callToAction {
     position: absolute;
     left: 40%;
@@ -154,11 +147,33 @@ nav button {
 #dark-mode {
     position: absolute;
     right: 2.5rem;
-    top: 6rem;
+    top: 7rem;
     background-color: var(--background-color);
 }
 
 button {
     color: var(--paragraph-color);
     background-color: var(--background-color);
+}
+
+#hero {
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+}
+
+#hero h2::before {
+    content: "Small ";
+}
+
+#hero h2 {
+    padding: 1rem;
+    position: absolute;
+    top: 250;
+    left: 0px;
+    margin-block-start: 0em;
+    background-color: black;
+    color: white;
 }
