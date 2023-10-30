@@ -178,3 +178,20 @@ button {
     color: white;
 }
 
+#discover-main {
+    display: block;
+}
+
+#discover-demographics, #discover-message, #discover-calendar {
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+#discover-images img {
+    border: 5px solid;
+}
+
+#discover-message h3 {
+    font-size: larger;
+}
