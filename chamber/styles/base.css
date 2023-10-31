@@ -59,11 +59,6 @@ section h1 {
     padding: 1rem;
 }
 
-#weatherCard img {
-    width: 350;
-    height: 300;
-}
-
 #weatherCard p {
     text-align: center;
 }
@@ -171,7 +166,6 @@ button {
 #hero h2 {
     padding: 1rem;
     position: absolute;
-    top: 250;
     left: 0px;
     margin-block-start: 0em;
     background-color: black;
@@ -199,4 +193,9 @@ button {
 
 #discover-message h3 {
     font-size: larger;
+}
+
+#discovery-table {
+    text-align: center;
+    justify-content: center;
 }
