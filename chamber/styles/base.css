@@ -188,8 +188,13 @@ button {
     margin: 1rem 0;
 }
 
-#discover-images img {
-    border: 5px solid;
+#discover-images {
+    text-align: center;
+}
+
+#discover-images h3 {
+    text-align: center;
+    padding: 1rem;
 }
 
 #discover-message h3 {
