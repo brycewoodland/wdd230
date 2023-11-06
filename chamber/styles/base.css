@@ -206,9 +206,9 @@ button {
 
 /* join.html */
 
-#join-main {
-    grid: display;
-    grid-template-columns: 1fr 1fr;
+.join {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
 #join-main h3 {
@@ -226,6 +226,10 @@ label.myinput input, label.myinput textarea {
     padding: .5rem;
     width: 20rem;
     max-width: 20rem;
+}
+
+input:invalid {
+    box-shadow: 1px 1px 1px red;
 }
 
 label {
