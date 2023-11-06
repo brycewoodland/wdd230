@@ -257,3 +257,7 @@ label .radio input {
 ul li {
     color: var(--paragraph-color);
 }
+
+#thankyou-page p {
+    text-align: center;
+}
