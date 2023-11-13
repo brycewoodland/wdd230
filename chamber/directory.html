@@ -20,6 +20,7 @@
     <script defer src="scripts/hamburger-menu.js"></script>
     <script defer src="scripts/darkmode.js"></script>
     <script defer src="scripts/windchill.js"></script>
+    <script defer src="scripts/directory.js"></script>
 </head>
 <body>
     <header>
@@ -27,16 +28,20 @@
         <nav>
             <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
             <ul id="nav-menu">
-                <li><a class="active" href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="#">Directory</a></li>
+                <li><a class="active" href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
         <div><button id="dark-mode">DARK</button></div>
     </header>
     <main id="directory-main">
-
+        <div id="directory-selector">
+            <button id="directory-grid" class="activeMode">GRID</button>
+            <button id="directory-list">LIST</button>
+            <div id="directory-data" class="directory-cards"></div>
+        </div>
     </main>
     <footer>
         <p><img src="images/logo.webp" alt="logo"></p>

@@ -1,59 +1,75 @@
 {
     "members":[
         {
-            "name":"Example Name",
-            "address":"123 Main Street, Rexburg, ID 83440",
-            "phone":"208-123-1234",
-            "websiteURL":"Https://www.rexburg.org",
-            "imageURL":"images/example.jpg",
+            "name":"Intermountain Health",
+            "address":"36 South State Street, 22nd Floor, Salt Lake City, UT 84111",
+            "phone":"801-442-2000",
+            "websiteURL":"https://intermountainhealthcare.org/",
+            "imageURL":"images/directory-intermountain.webp",
             "membershipLevel":"Gold"
         },
         {
-            "name":"Example Name",
-            "address":"123 Main Street, Rexburg, ID 83440",
-            "phone":"208-123-1234",
-            "websiteURL":"Https://www.rexburg.org",
-            "imageURL":"images/example.jpg",
+            "name":"Lagoon Corporation",
+            "address":"P.O. Box 696, Farmington, UT 84025",
+            "phone":"801-451-8000",
+            "websiteURL":"https://www.lagoonpark.com/",
+            "imageURL":"images/discovery-lagoon.webp",
             "membershipLevel":"Gold"
         },
         {
-            "name":"Example Name",
-            "address":"123 Main Street, Rexburg, ID 83440",
-            "phone":"208-123-1234",
-            "websiteURL":"Https://www.rexburg.org",
-            "imageURL":"images/example.jpg",
+            "name":"Hilton",
+            "address":"4923 W Douglas Corrigan Way, Salt Lake City, UT 84116",
+            "phone":"801-434-4943",
+            "websiteURL":"https://www.hilton.com/en/p/for-the-stay/",
+            "imageURL":"images/discovery-hilton.webp",
             "membershipLevel":"Gold"
         },
         {
-            "name":"Example Name",
-            "address":"123 Main Street, Rexburg, ID 83440",
-            "phone":"208-123-1234",
-            "websiteURL":"Https://www.rexburg.org",
-            "imageURL":"images/example.jpg",
+            "name":"Thanksgiving Point",
+            "address":"3003 North Thanksgiving Way, Lehi, UT 84043",
+            "phone":"801-768-2300",
+            "websiteURL":"https://thanksgivingpoint.org/",
+            "imageURL":"images/discovery-thanksgivingpoint.webp",
             "membershipLevel":"Gold"
         },
         {
-            "name":"Example Name",
-            "address":"123 Main Street, Rexburg, ID 83440",
-            "phone":"208-123-1234",
-            "websiteURL":"Https://www.rexburg.org",
-            "imageURL":"images/example.jpg",
+            "name":"KSL-TV",
+            "address":"P.O. Box 1160, 55 North 300 West, Salt Lake City, UT 84180-0",
+            "phone":"801-575-5555",
+            "websiteURL":"https://ksltv.com/",
+            "imageURL":"images/directory-ksl.webp",
             "membershipLevel":"Gold"
         },
         {
-            "name":"Example Name",
-            "address":"123 Main Street, Rexburg, ID 83440",
-            "phone":"208-123-1234",
-            "websiteURL":"Https://www.rexburg.org",
-            "imageURL":"images/example.jpg",
+            "name":"Ivory Homes",
+            "address":"978 East Woodoak Lane, Salt Lake city, UT 84117",
+            "phone":"801-747-7007",
+            "websiteURL":"https://ivoryhomes.com/",
+            "imageURL":"images/directory-ivory.webp",
             "membershipLevel":"Gold"
         },
         {
-            "name":"Example Name",
-            "address":"123 Main Street, Rexburg, ID 83440",
-            "phone":"208-123-1234",
-            "websiteURL":"Https://www.rexburg.org",
-            "imageURL":"images/example.jpg",
+            "name":"The Church of Jesus Christ of Latter-Day Saints",
+            "address":"50 East North Temple, Salt Lake City, UT 84150",
+            "phone":"801-240-1000",
+            "websiteURL":"https://www.churchofjesuschrist.org/?lang=eng",
+            "imageURL":"images/discovery-ldschurhc.webp",
+            "membershipLevel":"Gold"
+        },
+        {
+            "name":"Example",
+            "address":"123 Main Street, Salt Lake City, UT 84123",
+            "phone":"801-123-1234",
+            "websiteURL":"https://example.org",
+            "imageURL":"images/example.webp",
+            "membershipLevel":"Gold"
+        },
+        {
+            "name":"Example",
+            "address":"123 Main Street, Salt Lake City, UT 84123",
+            "phone":"801-123-1234",
+            "websiteURL":"https://example.org",
+            "imageURL":"images/example.webp",
             "membershipLevel":"Gold"
         }
     ]

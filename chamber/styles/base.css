@@ -261,3 +261,75 @@ ul li {
 #thankyou-page p {
     text-align: center;
 }
+
+/* Directory Page */
+
+.directory-main {
+    width: 100%;
+}
+
+#directory-selector {
+    width: 100%;
+    text-align: center;
+}
+
+#directory-selector button {
+    margin: .5rem;
+    padding: 1rem;
+    background-color: var(--background-color);
+    color: var(--paragraph-color);
+}
+
+/* cards */
+
+.directory-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
+}
+
+.directory-cards section {
+    text-align: center;
+    border: 2px solid black;
+    width: 300px;
+    background-color: var(--background-color);
+    padding: 1rem;
+    margin: .5rem;
+}
+
+.directory-cards .card-button {
+    text-decoration: none;
+    color: var(--header-background);
+    background-color: var(--background-color);
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.card-button:hover {
+    color: red;
+}
+
+/* list */
+
+.directory-list {
+    display: grid;
+    justify-items: center;
+    padding: 1rem;
+}
+
+.directory-list section img {
+    display: none;
+}
+
+.directory-list section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.directory-list .card-button {
+    color: var(--paragraph-color);
+    text-align: center;
+}
