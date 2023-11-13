@@ -1,0 +1,60 @@
+{
+    "members":[
+        {
+            "name":"Example Name",
+            "address":"123 Main Street, Rexburg, ID 83440",
+            "phone":"208-123-1234",
+            "websiteURL":"Https://www.rexburg.org",
+            "imageURL":"images/example.jpg",
+            "membershipLevel":"Gold"
+        },
+        {
+            "name":"Example Name",
+            "address":"123 Main Street, Rexburg, ID 83440",
+            "phone":"208-123-1234",
+            "websiteURL":"Https://www.rexburg.org",
+            "imageURL":"images/example.jpg",
+            "membershipLevel":"Gold"
+        },
+        {
+            "name":"Example Name",
+            "address":"123 Main Street, Rexburg, ID 83440",
+            "phone":"208-123-1234",
+            "websiteURL":"Https://www.rexburg.org",
+            "imageURL":"images/example.jpg",
+            "membershipLevel":"Gold"
+        },
+        {
+            "name":"Example Name",
+            "address":"123 Main Street, Rexburg, ID 83440",
+            "phone":"208-123-1234",
+            "websiteURL":"Https://www.rexburg.org",
+            "imageURL":"images/example.jpg",
+            "membershipLevel":"Gold"
+        },
+        {
+            "name":"Example Name",
+            "address":"123 Main Street, Rexburg, ID 83440",
+            "phone":"208-123-1234",
+            "websiteURL":"Https://www.rexburg.org",
+            "imageURL":"images/example.jpg",
+            "membershipLevel":"Gold"
+        },
+        {
+            "name":"Example Name",
+            "address":"123 Main Street, Rexburg, ID 83440",
+            "phone":"208-123-1234",
+            "websiteURL":"Https://www.rexburg.org",
+            "imageURL":"images/example.jpg",
+            "membershipLevel":"Gold"
+        },
+        {
+            "name":"Example Name",
+            "address":"123 Main Street, Rexburg, ID 83440",
+            "phone":"208-123-1234",
+            "websiteURL":"Https://www.rexburg.org",
+            "imageURL":"images/example.jpg",
+            "membershipLevel":"Gold"
+        }
+    ]
+}
