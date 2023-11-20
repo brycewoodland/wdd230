@@ -20,6 +20,8 @@
     <script defer src="scripts/hamburger-menu.js"></script>
     <script defer src="scripts/darkmode.js"></script>
     <script defer src="scripts/windchill.js"></script>
+    <script defer src="scripts/meet-greet.js"></script>
+    <script defer src="scripts/weather.js"></script>
 </head>
 <body>
     <header>
@@ -37,7 +39,7 @@
     </header>
 
     <main id="home-main">
-        <p id="meetgreet"></p>
+        <p id="meetgreet">Join us for a meet and greet at 7:00 P.M.<button id="closegreet">X</button></p>
         <section id="hero" class="home-section">
             <h2>Hero </h2>
             <picture>
@@ -61,9 +63,9 @@
         </section>
         <section id="weatherCard" class="home-section">
             <h2>Weather</h2>
-            <p><img src="images/weather-icon.webp" alt="weatherCard"></p>
-            <p><span id="temperature">33</span>&deg;F</p>
-            <p>Partly Cloudy</p>
+            <p><img id="weather-icon" src="#" alt="#"></p>
+            <p id="weather-desc"></p>
+            <p id="weather-temp">-&deg;F | </p>
             <p>Wind Speed: <span id="windspeed">10</span> mph</p>
             <p>Humidity: 35%</p>
             <p> Wind Chill: <span id="windchill">N/A</span>&deg;F</p>

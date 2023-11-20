@@ -299,7 +299,7 @@ ul li {
 
 .directory-cards .card-button {
     text-decoration: none;
-    color: var(--header-background);
+    color: var(--paragraph-color);
     background-color: var(--background-color);
     padding: .5rem;
     border-radius: 5px;
@@ -332,4 +332,13 @@ ul li {
 .directory-list .card-button {
     color: var(--paragraph-color);
     text-align: center;
+}
+
+#meetgreet {
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+#meetgreet button {
+    margin-left: 5px;
 }
