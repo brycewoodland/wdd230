@@ -57,19 +57,19 @@
             "membershipLevel":"Gold"
         },
         {
-            "name":"Example",
-            "address":"123 Main Street, Salt Lake City, UT 84123",
-            "phone":"801-123-1234",
-            "websiteURL":"https://example.org",
-            "imageURL":"images/example.webp",
+            "name":"Brighton",
+            "address":"8302 Brighton Loop Road, Brighton, UT 84121",
+            "phone":"801-532-4731",
+            "websiteURL":"https://brightonresort.com/",
+            "imageURL":"images/directory-brighton.webp",
             "membershipLevel":"Gold"
         },
         {
-            "name":"Example",
-            "address":"123 Main Street, Salt Lake City, UT 84123",
-            "phone":"801-123-1234",
-            "websiteURL":"https://example.org",
-            "imageURL":"images/example.webp",
+            "name":"Red Iguana",
+            "address":"736 West North Temple, Salt Lake City, UT 84116",
+            "phone":"801-322-1489",
+            "websiteURL":"https://www.rediguana.com/",
+            "imageURL":"images/directory-rediguana.webp",
             "membershipLevel":"Gold"
         }
     ]
