@@ -68,5 +68,19 @@
         grid-column: 1 / 3;
         text-align: center;
     }
+
+    .forecast h1 {
+        grid-column: 1 / 3;
+        padding: .5rem;
+        margin-right: .5rem;
+        text-align: center;
+    }
+
+    .forecast {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 

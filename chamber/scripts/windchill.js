@@ -19,7 +19,7 @@ function showWindChill(temp, speed) {
 
 const temperatureSpan = document.getElementById('temperature');
 const windspeedSpan = document.getElementById('windspeed');
-const temperature = parseInt(temperatureSpan.textContent);
+const temperature = parseInt(weather-temp.textContent);
 const windspeed = parseInt(windspeedSpan.textContent);
 
 showWindChill(temperature, windspeed);

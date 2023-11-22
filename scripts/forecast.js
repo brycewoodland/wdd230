@@ -1,20 +1,10 @@
+// Update this URL to your API call URL to openweather
+ 
+// const weatherURL = "./data/3dayweather.json"
 const LAT = 43.887093;
 const LON = -111.6682194;
 const APIKEY = "f69c814af7c03a68b651ec98b5b40807";
 const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
-const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
-
-function displayWeather(data) {
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
-    const desc = data.weather[0].description;
-    const windSpeed = data.wind.speed.toFixed(0);
-    const temperature = data.main.temp.toFixed(0);
-
-    document.getElementById('weather-icon').src = iconsrc;
-    document.getElementById('weather-desc').textContent = desc;
-    document.getElementById('temperature').textContent = temperature;
-    document.getElementById('windspeed').textContent = windSpeed;
-}
 
 const ONE_DAY = 24 * 60 * 60 * 1000
 
@@ -44,12 +34,13 @@ function showForecast(forecasts){
     console.log(lowTemps)
 
     // Add the forecast information to the HTML document
-    weatherElt = document.querySelector(".forecast")
+    weatherElt = document.querySelector("body section")
     for (let i=0; i < 3; i++){
         let newsection = document.createElement("section");
         newsection.innerHTML = `<h2>${dates[i]}</h2><p>High: ${highTemps[i].main.temp.toFixed(0)}&deg;</p><p>Low: ${lowTemps[i].main.temp.toFixed(0)}&deg;</p>`
         weatherElt.append(newsection)
     }    
+  
 }
 
 async function fetchForecast() {
@@ -67,19 +58,3 @@ async function fetchForecast() {
   }
 
 fetchForecast()
-async function getTheWeather() {
-    try {
-      const response = await fetch(apiWeatherURL);
-      if (response.ok) {
-        const data = await response.json();
-        displayWeather(data);
-      } else {
-        throw Error(await response.text());
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
-  getTheWeather();
-  getTheForecast();
