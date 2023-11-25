@@ -27,7 +27,7 @@ header {
     border: solid 2px var(--paragraph-color);
     box-shadow: 10px 5px 5px gray;
     margin: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 nav ul {
@@ -89,6 +89,8 @@ main section p img {
 
 #currentEvent img, #weatherCard img{
     border-radius: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 #spotlight1 img, #spotlight2 img{
