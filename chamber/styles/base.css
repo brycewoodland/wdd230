@@ -193,7 +193,11 @@ button {
     margin: 1rem 0;
 }
 
-#discover-images {
+#discover-facts {
+    text-align: center;
+}
+
+#discover-images{
     text-align: center;
 }
 
@@ -201,7 +205,8 @@ button {
     border: 3px solid var(--paragraph-color);
     box-shadow: 10px 5px 5px gray;
     transition: transform .2s;
-    max-width: 800px;
+    width: 100%;
+    height: auto;
 }
 
 #discover-images img:hover {
@@ -221,6 +226,10 @@ button {
 #discovery-table {
     text-align: center;
     justify-content: center;
+}
+
+#discover-calendar {
+    margin: auto;
 }
 
 /* join.html */

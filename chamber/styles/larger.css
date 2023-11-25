@@ -64,6 +64,11 @@
         content: "Large ";
     }
 
+    #discover-images img {
+        width: auto;
+        height: auto;
+    }
+
     #meetgreet {
         grid-column: 1 / 3;
         text-align: center;
