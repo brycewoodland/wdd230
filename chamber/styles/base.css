@@ -64,6 +64,7 @@ section h1 {
     left: 35%;
     bottom: 45%;
     padding: 1rem;
+    text-decoration: none;
 }
 
 #weatherCard p {
@@ -154,9 +155,10 @@ nav button {
     background-color: var(--background-color);
 }
 
-button {
+#callToAction {
     color: var(--paragraph-color);
     background-color: var(--background-color);
+    
 }
 
 #hero {
