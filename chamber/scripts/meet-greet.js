@@ -1,7 +1,7 @@
 let meetgreet = new Date();
 let dayOfWeek = meetgreet.getDay();
 
-if (dayOfWeek == 1, 2, 3)
+if (dayOfWeek >= 1 && dayOfWeek <= 3)
 {
     let meetgreet = document.getElementById('meetgreet');
     meetgreet.style.display = 'block';
