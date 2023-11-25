@@ -65,6 +65,14 @@
     }
 
     #discover-images img {
+        transition: transform .2s;
+    }
+
+    #discover-images img:hover {
+        transform: scale(1.1);
+    }
+
+    #discover-images img {
         width: auto;
         height: auto;
     }

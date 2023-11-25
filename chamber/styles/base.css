@@ -89,8 +89,7 @@ main section p img {
 
 #currentEvent img, #weatherCard img{
     border-radius: 50%;
-    justify-content: center;
-    align-items: center;
+    width: auto;
 }
 
 #spotlight1 img, #spotlight2 img{
@@ -206,13 +205,8 @@ button {
 #discover-images img {
     border: 3px solid var(--paragraph-color);
     box-shadow: 10px 5px 5px gray;
-    transition: transform .2s;
     width: 100%;
     height: auto;
-}
-
-#discover-images img:hover {
-    transform: scale(1.1);
 }
 
 #discover-images h3 {
