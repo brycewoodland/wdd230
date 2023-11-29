@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Signika:wght@700&display=swap');
+
+:root {
+    --background-color: #FFFEEB;
+    --header-color: #FFA500;
+    --header-text-color: #4285F4;
+    --hover-color: #333333;
+    --text-color: #5D4037;
+}
+header {
+    display: flex;
+    font-family: "Signika";
+    padding: 1rem;
+    background-color: var(--header-color);
+    color: var(--background-color);
+    align-items: center;
+}
+header h1 {
+    margin: 0 325px;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+nav ul li {
+    flex: 1;
+    background-color: var(--header-color);
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    color: var(--background-color);
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+}
+nav ul li a:hover {
+    color: var(--hover-color);
+}
+body {
+    margin: 0 auto;
+    font-family: "Open Sans";
+    max-width: 1280px;
+    background-color: var(--background-color);
+}
+#main-home h2 {
+    font-family: "Signika";
+    text-align: center;
+    color: var(--header-text-color);
+}
+#main-home img {
+    justify-content: center;
+    align-items: center;
+}
+#hero {
+    position: relative;
+}
+#hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 165, 0, 0.7);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+#hero-overlay h2 {
+    color: #FFF; 
+    margin: 0; 
+    font-size: 2.5em;
+}
+#hero-overlay p {
+    color: var(--text-color);
+}
+#callToAction a {
+    text-decoration: none;
+    font-size: larger;
+}
+#main-home p {
+    color: var(--text-color);
+}
+#main-home img {
+   display: block;
+   margin-right: auto;
+   margin-left: auto;
+}
+#weatherCard p {
+    text-align: center;
+}
+footer {
+    margin: 0 auto;
+    background-color: var(--header-color);
+    color: white;
+    padding: 1rem;
+    font-size: large;
+    text-align: center;
+}
