@@ -10,13 +10,13 @@
 header {
     display: flex;
     font-family: "Signika";
-    padding: 1rem;
+    padding: 1rem 2rem;
     background-color: var(--header-color);
     color: var(--background-color);
     align-items: center;
 }
 header h1 {
-    margin: 0 325px;
+    margin: 0 25px;
 }
 nav ul {
     display: flex;
@@ -38,18 +38,44 @@ nav ul li a {
     padding: 1rem;
     color: var(--background-color);
     border-top: 1px solid #333333;
-    border-bottom: 1px solid #333333;
 }
 nav ul li a:hover {
     color: var(--hover-color);
+}
+.active {
+    color: var(--hover-color);
+}
+/* Hamburger Menu */
+.menu-hide, .menu-show {
+    display: none;
+}
+
+.menu-hide.showing, .menu-show.showing {
+    display: block;
+}
+
+#nav-menu {
+    display: none;
+    position: relative;
+}
+#nav-menu.showing {
+    display: flex;
+}
+nav button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
 }
 body {
     margin: 0 auto;
     font-family: "Open Sans";
     max-width: 1280px;
+    padding: 1rem;
     background-color: var(--background-color);
 }
-#main-home h2 {
+#main-home h1, h2 {
     font-family: "Signika";
     text-align: center;
     color: var(--header-text-color);
@@ -61,6 +87,12 @@ body {
 #hero {
     position: relative;
 }
+#hero img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
 #hero-overlay {
     position: absolute;
     top: 50%;
@@ -68,21 +100,30 @@ body {
     transform: translate(-50%, -50%);
     background-color: rgba(255, 165, 0, 0.7);
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     max-width: 80%;
 }
 #hero-overlay h2 {
     color: #FFF; 
     margin: 0; 
-    font-size: 2.5em;
+    font-size: 1em;
 }
 #hero-overlay p {
-    color: var(--text-color);
+    color: var(--background-color);
+    font-size: 0.7em;
 }
-#callToAction a {
+#hero-overlay button {
+    background-color: #FEECB3;
+    color: #E74C3C;
+    font-size: 0.8em;
+}
+#callToAction {
     text-decoration: none;
     font-size: larger;
+}
+#main-home h1 {
+    color: var(--header-text-color);
 }
 #main-home p {
     color: var(--text-color);
@@ -92,8 +133,24 @@ body {
    margin-right: auto;
    margin-left: auto;
 }
-#weatherCard p {
+#carlsbadCard, #malibuCard, #santaBarbaraCard {
+    background-color: #FEECB3;
+    border: 3px solid #C68E41;
+    box-shadow: 2px 2px 2px #C68E41;
+    padding: 1rem;
+    margin: 2rem;
+}
+#weatherCard, #forecastCard {
+    background-color: #FEECB3;
+    border: 3px solid #C68E41;
+    box-shadow: 2px 2px 2px #C68E41;
+    margin: 1rem;
+}
+#weatherCard p, #forecastCard p {
     text-align: center;
+}
+#weather-icon {
+    background-color: lightgray;
 }
 footer {
     margin: 0 auto;

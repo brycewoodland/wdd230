@@ -1,0 +1,72 @@
+@media screen and (min-width: 1000px) {
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #hero {
+        grid-column: 1 / 4;
+    }
+
+    #hero-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: rgba(255, 165, 0, 0.7);
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 80%;
+    }
+
+    #hero-overlay h2 {
+        font-size: 3em;
+    }
+
+    #hero-overlay p {
+        font-size: 3em;
+    }
+
+    #hero-overlay button {
+        font-size: 3em;
+    }
+
+    #carlsbadCard {
+        grid-column: 1 / 2;
+        text-align: center;
+    }
+
+    #malibuCard {
+        grid-column: 2 / 3;
+        text-align: center;
+    }
+
+    #santaBarbaraCard {
+        grid-column: 3 / 4;
+        text-align: center;
+    }
+
+    #weatherCard {
+        grid-column: 1 / 2;
+        margin: 1rem;
+    }
+
+    #forecastCard {
+        grid-column: 2 / 4;
+        margin: 1rem;
+    }
+
+    /*Hamburger Menu */
+        .menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing {
+        display: none;
+    }
+
+    #nav-menu {
+        display: flex;
+    }
+}

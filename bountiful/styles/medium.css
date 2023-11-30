@@ -4,5 +4,35 @@
         display: flex;
         flex-direction: row;
     }
+
+    #hero {
+        grid-column: 1 / 4;
+        margin-top: 5px;
+    }
+
+    #hero-overlay {
+        max-width: 90%; /* Adjust the maximum width for smaller views */
+    }
+
+    #hero-overlay h2 {
+        font-size: 2em; /* Adjust the font size for smaller views */
+    }
+
+    #hero-overlay p {
+        font-size: 0.8em; /* Adjust the font size for smaller views */
+    }
+
+    #hero-overlay button {
+        font-size: 1em; /* Adjust the font size for smaller views */
+    }
+
+    /*Hamburger Menu */
+    .menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing {
+        display: none;
+    }
+    
+    #nav-menu {
+        display: flex;
+    }
 }
 
