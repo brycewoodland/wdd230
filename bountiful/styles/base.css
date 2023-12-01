@@ -34,7 +34,7 @@ nav ul li {
 nav ul li a {
     display: block;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1em;
     text-align: center;
     padding: 1rem;
     color: var(--background-color);
@@ -42,9 +42,11 @@ nav ul li a {
 }
 nav ul li a:hover {
     color: var(--hover-color);
+    background-color: #FFC940;
 }
 .active {
     color: var(--hover-color);
+    background-color: #FFC940;
 }
 /* Hamburger Menu */
 .menu-hide, .menu-show {
@@ -101,7 +103,7 @@ body {
     transform: translate(-50%, -50%);
     background-color: rgba(255, 165, 0, 0.7);
     text-align: center;
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
     max-width: 80%;
 }
@@ -114,10 +116,17 @@ body {
     color: var(--background-color);
     font-size: 0.8em;
 }
-#hero-overlay button {
+#callToAction {
     background-color: #FEECB3;
     color: #E74C3C;
     font-size: 1em;
+    padding: 0.25rem;
+    text-decoration: none;
+    border: 2px solid #333333;
+}
+#callToAction:hover{
+    color: var(--hover-color);
+    background-color: #FFC940;
 }
 #main-home h1 {
     color: var(--header-text-color);
@@ -156,6 +165,7 @@ footer {
     padding: 1rem;
     font-size: medium;
     text-align: center;
+    position: relative;
 }
 footer ul {
     list-style: none;
@@ -191,7 +201,7 @@ ul li a:hover {
     color: var(--background-color);
 }
 ul.social-links {
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 ul.social-links li {
     display: inline-block;
@@ -203,4 +213,63 @@ ul.social-links img {
 }
 ul.social-links a {
     display: block;
+}
+
+/* Order Drink Page */
+#main-orderdrink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label.myinput {
+    display: block;
+    padding-top: 1rem;
+    
+}
+label.myinput input, label.myinput textarea {
+    display: block;
+    font-size: 1.1rem;
+    padding: .5rem;
+    width: 20rem;
+    max-width: 20rem;
+    border: 2px solid #333333;
+}
+input:invalid {
+    box-shadow: 2px 2px 2px #E74C3C;
+}
+.mysubmit {
+    background: var(--header-text-color);
+    color: var(--background-color);
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1em;
+    border: 2px solid #333333;
+}
+
+/* About Us Page */
+#main-aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+#main-aboutus h1 {
+    text-align: center;
+}
+#main-aboutus section img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+#main-aboutus section p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+#google-map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 5px;
 }

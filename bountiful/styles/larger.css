@@ -8,7 +8,11 @@
         flex-direction: row;
     }
 
-    main {
+    nav ul li a {
+        font-size: 1.25rem;
+    }
+
+    #main-home {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -23,21 +27,14 @@
         left: 50%;
         background-color: rgba(255, 165, 0, 0.7);
         text-align: center;
-        padding: 20px;
+        padding: 30px;
         border-radius: 10px;
         max-width: 80%;
+        font-size: 1.25em;
     }
 
-    #hero-overlay h2 {
-        font-size: 3em;
-    }
-
-    #hero-overlay p {
-        font-size: 3em;
-    }
-
-    #hero-overlay button {
-        font-size: 5em;
+    #callToAction {
+        padding: 0.5rem;
     }
 
     #carlsbadCard {
@@ -65,6 +62,27 @@
         margin: 1rem;
     }
 
+    footer {
+        position: relative;
+    }
+
+    ul.social-links {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    ul.social-links li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    ul.social-links img {
+        width: 20px;
+        height: 20px;
+    }
+    ul.social-links a {
+        display: block;
+    }
+
     /*Hamburger Menu */
         .menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing {
         display: none;
@@ -72,5 +90,10 @@
 
     #nav-menu {
         display: flex;
+    }
+
+    /* About Us Page */
+    #main-aboutus picture img{
+        width: 400;
     }
 }

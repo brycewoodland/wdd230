@@ -11,19 +11,32 @@
     }
 
     #hero-overlay {
-        max-width: 90%; /* Adjust the maximum width for smaller views */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: rgba(255, 165, 0, 0.7);
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 80%;
+        font-size: 1.25em;
+    }
+
+    #hero-overlay {
+        max-width: 90%; 
     }
 
     #hero-overlay h2 {
-        font-size: 2em; /* Adjust the font size for smaller views */
+        font-size: 2em; 
     }
 
     #hero-overlay p {
-        font-size: 0.8em; /* Adjust the font size for smaller views */
+        font-size: 0.8em; 
     }
 
-    #hero-overlay button {
-        font-size: 1em; /* Adjust the font size for smaller views */
+    #callToAction {
+        font-size: 1em;
+        padding: 0.5rem; 
     }
 
     /*Hamburger Menu */
