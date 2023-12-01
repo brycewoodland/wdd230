@@ -17,7 +17,6 @@
     <script defer src="scripts/footer.js"></script>
     <script defer src="scripts/hamburger-menu.js"></script>
     <script defer src="scripts/weather.js"></script>
-    <script defer src="scripts/forecast.js"></script>
 </head>
 <body>
     <header>
@@ -71,20 +70,38 @@
             <p id="weather-humid">Humidity:</p>
         </section>
         <section id="forecastCard">
-            <h2>Forecast: 3 Day</h2>
+            <h2>Carlsbad Forecast</h2>
             <img id="forecast-icon" src="" alt="forecastIcon">
             <p id="forecast-desc">Description:</p>
         </section>
     </main>
     <footer>
-        <img src="images/logo-transparent-png.webp" alt="Bountiful Foods Logo">
-        <p>456 Main Street</p>
-        <p>Carlsbad, California</p>
-        <p>92008</p>
+        <div id="top-container">
+            <img src="images/logo-transparent-png.webp" alt="Bountiful Foods Logo">
+            <p>456 Main Street <br> Carlsbad, California <br> 92008</p>
+            <div id="contact-info">
+                <p>Contact us:</p>
+                <ul class="contact-info">
+                    <li>Email: info@bountifulfoods.com</li>
+                    <li>Phone: +1 (123) 456-7890</li>
+                </ul>
+        </div>
+        </div>
         <hr>
-        <p>Bryce Woodland || Last Modified: <span id='lastmodified'></span> || Copyright &copy;<span id='currentyear'></span></p>
-        <p></p>
-        <p></span></p>
+        <div id="bottom-container">
+            <p>Bryce Woodland || Last Modified: <span id='lastmodified'></span> || Copyright &copy;<span id='currentyear'></span></p>
+            <p id="resource">Resources/Attribution:</p>
+            <ul>
+                <li>Fruit data provided by <a href="https://www.fruityvice.com" target="_blank">Fruityvice</a></li>
+                <li>Weather data provided by <a href="https://openweathermap.org" target="_blank">OpenWeatherMap</a></li>
+            </ul>
+            <p>Connect with us:</p>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com" target="_blank"><img src="images/facebookIcon.png" alt="Facebook"></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><img src="images/twitterIcon.png" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagramIcon.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

@@ -35,14 +35,18 @@ async function getWeather() {
 getWeather();
 
 // Forecast Weather for the next 3 days
-const forecastAPIURL = `api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
+const forecastAPIURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
 
 function displayForecast(forecasts) {
-    console.log(forecasts);
+    let dates = [];
+    let icons = [];
+
 }
 
 async function fetchForecast() {
     const response = await fetch(forecastAPIURL);
-    const data = response.json();
+    const data = await response.json();
     displayForecast(data);
 }
+
+fetchForecast();
