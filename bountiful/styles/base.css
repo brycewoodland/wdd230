@@ -7,6 +7,8 @@
     --hover-color: #333333;
     --text-color: #5D4037;
 }
+
+/* Home Page */
 header {
     display: flex;
     font-family: "Signika";
@@ -151,6 +153,9 @@ body {
     box-shadow: 2px 2px 2px #C68E41;
     padding: 1rem;
     margin: 2rem;
+}
+#sanDiegoCard img, #malibuCard img, #santaBarbara img {
+    width: 100%;
 }
 #weatherCard, #forecastCard {
     background-color: #FEECB3;
