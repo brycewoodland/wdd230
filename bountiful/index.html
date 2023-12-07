@@ -16,6 +16,7 @@
     <title>Bountiful Foods</title>
     <script defer src="scripts/footer.js"></script>
     <script defer src="scripts/hamburger-menu.js"></script>
+    <script defer src="scripts/totalDrinks.js"></script>
     <script defer src="scripts/weather.js"></script>
 </head>
 <body>
@@ -43,11 +44,23 @@
                 <a id="callToAction" href="orderdrink.html">Order Drink</a>
             </div>
         </section>
+        <section id="informationCard">
+            <h2>Information</h2>
+            <p>Total Number of Drinks Ordered: <span id="totalDrinks">0</span></p>
+            <img src="images/drinkIcon.webp" alt="drinkIcon">
+        </section>
         <section id="carlsbadCard">
             <h2>Carlsbad</h2>
-            <img src="images/volkswagen.webp" alt="Carlsbad">
+            <img src="images/fruitBag.webp" alt="Carlsbad">
             <p>Carlsbad is situated along the Pacific Ocean coastline, providing residents and visitors with scenic views and access to beaches.
             It is part of the larger San Diego metropolitan area and is known for its pleasant climate.</p>
+        </section>
+        <section id="sanDiegoCard">
+            <h2>San Diego</h2>
+            <img src="images/volkswagen.webp" alt="San Diego">
+            <p>San Diego is a vibrant coastal city located in the southwestern corner of the United States, in the state of California. Known for 
+            its idyllic climate, diverse culture, and picturesque landscapes, San Diego offers a unique blend of urban sophistication and 
+            laid-back beach lifestyle</p>
         </section>
         <section id="malibuCard">
             <h2>Malibu</h2>
@@ -71,8 +84,21 @@
         </section>
         <section id="forecastCard">
             <h2>Carlsbad Forecast</h2>
-            <img id="forecast-icon" src="" alt="forecastIcon">
-            <p id="forecast-desc">Description:</p>
+                <section>
+                    <p>Date: </p>
+                    <img src="images/rainIcon.png" alt="oneIcon">
+                    <p id="day1-desc">Description: rain</p>
+                </section>
+                <section>
+                    <p>Date:</p>
+                    <img src="images/clearskyIcon.png" alt="secondIcon">
+                    <p id="day2-desc">Description: clear sky</p>
+                </section>  
+                <section>
+                    <p>Date:</p>
+                    <img src="images/clearskyIcon.png" alt="threeIcon">
+                    <p>Description: clear sky</p>
+                </section>
         </section>
     </main>
     <footer>

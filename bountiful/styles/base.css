@@ -117,8 +117,8 @@ body {
     font-size: 0.8em;
 }
 #callToAction {
-    background-color: #FEECB3;
-    color: #E74C3C;
+    background-color: var(--header-text-color);
+    color: var(--background-color);
     font-size: 1em;
     padding: 0.25rem;
     text-decoration: none;
@@ -126,7 +126,7 @@ body {
 }
 #callToAction:hover{
     color: var(--hover-color);
-    background-color: #FFC940;
+    background-color: lightblue;
 }
 #main-home h1 {
     color: var(--header-text-color);
@@ -139,7 +139,13 @@ body {
    margin-right: auto;
    margin-left: auto;
 }
-#carlsbadCard, #malibuCard, #santaBarbaraCard {
+#informationCard {
+    text-align: center;
+}
+#carlsbadCard img {
+    width: 100%;
+}
+#informationCard, #sanDiegoCard, #carlsbadCard, #malibuCard, #santaBarbaraCard {
     background-color: #FEECB3;
     border: 3px solid #C68E41;
     box-shadow: 2px 2px 2px #C68E41;
@@ -225,7 +231,6 @@ ul.social-links a {
 label.myinput {
     display: block;
     padding-top: 1rem;
-    
 }
 label.myinput input, label.myinput textarea {
     display: block;
@@ -236,6 +241,20 @@ label.myinput input, label.myinput textarea {
     border: 2px solid #333333;
 }
 input:invalid {
+    box-shadow: 2px 2px 2px #E74C3C;
+}
+label.myinput select {
+    display: block;
+    font-size: 1.1rem;
+    padding: .5rem;
+    width: 20rem;
+    max-width: 20rem;
+    border: 2px solid #333333;
+    background-color: #FFF; 
+    background-position: right 10px center;
+    cursor: pointer;
+}
+label.myinput select:invalid {
     box-shadow: 2px 2px 2px #E74C3C;
 }
 .mysubmit {
@@ -261,15 +280,20 @@ input:invalid {
 #main-aboutus section img {
     display: block;
     margin: 0 auto;
-    width: 100%;
 }
 #main-aboutus section p {
     text-align: center;
     margin: 0 auto;
     padding: 1rem;
+    color: var(--text-color);
 }
 #google-map {
     width: 100%;
     height: 400px;
     margin-bottom: 5px;
+}
+
+/* Order Confirmation Page */ 
+#detailsCard, #orderCard, #healthCard {
+    text-align: center;
 }

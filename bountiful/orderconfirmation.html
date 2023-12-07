@@ -13,12 +13,10 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <title>Bountiful Foods - Order Drink</title>
+    <title>Bountiful Foods</title>
     <script defer src="scripts/footer.js"></script>
     <script defer src="scripts/hamburger-menu.js"></script>
     <script defer src="scripts/weather.js"></script>
-    <script defer src="scripts/orderdrink.js"></script>
-    <script defer src="scripts/totalDrinks.js"></script>
 </head>
 <body>
     <header>
@@ -33,28 +31,28 @@
             <li><a href="aboutus.html">About Us</a></li>
         </ul>
     </nav>
-    <main id="main-orderdrink">
-        <div>
-            <form id="orderDrinkForm" action="orderconfirmation.html" method="get" onsubmit="submitOrderForm()">
-                <label class="myinput">First Name: <input id="firstName" name="firstName" type="text" required></label>
-                <label class="myinput">Email: <input id="email" name="email" type="email" required placeholder="example@gmail.com"></label>
-                <label class="myinput">Phone Number: <input id="phoneNumber" name="phoneNumber" type="tel" required></label>
-                <label class="myinput">Select Fruit 1:
-                    <select name="fruit1" id="fruit1" required></select>
-                </label>
-                <label class="myinput">Select Fruit 2:
-                    <select name="fruit2" id="fruit2" required></select>
-                </label>
-                <label class="myinput">Select Fruit 3:
-                    <select name="fruit3" id="fruit3" required></select>
-                </label>
-                <label class="myinput">Special Instructions <textarea name="specialInstructions" cols="40" rows="5" id="" cols="30" rows="10"></textarea></label>
-                <input class="mysubmit" type="submit" value="Purchase">
-            </form>
-        </div>
-        <div>
-            <h3>Payment will be recieved when you pick up your order.</h3>
-        </div>
+    <main id="main-orderconfirmation">
+        <section id="detailsCard">
+            <h2>Thank you for your order!</h2>
+            <h2>Your order will be ready for pickup in 15 minutes</h2>
+            <h3>If you have any questions contact us at: (123) 456-7890</h3>
+        </section>
+        <section id="orderCard">
+            <p>Date of Order:</p>
+            <p>Name:</p>
+            <p>Email:</p>
+            <p>Phone:</p>
+            <p>Fruits:</p>
+            <p>Special Instructions:</p>
+        </section>
+        <section id="healthCard">
+            <h3>Health Information</h3>
+            <p>Carbohydrates:</p>
+            <p>Protein:</p>
+            <p>Fat:</p>
+            <p>Sugar:</p>
+            <p>Total Calories:</p>
+        </section>
     </main>
     <footer>
         <div id="top-container">
