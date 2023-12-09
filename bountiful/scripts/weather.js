@@ -34,19 +34,44 @@ async function getWeather() {
 
 getWeather();
 
-// Forecast Weather for the next 3 days
-const forecastAPIURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
 
-function displayForecast(forecasts) {
-    let dates = [];
-    let icons = [];
+const forecastapiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=33.1215196&lon=-117.350593&appid=f69c814af7c03a68b651ec98b5b40807`;
 
+function timestampToTime(timestamp) {
+    const date = new Date(timestamp * 1000);
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+    return `${hours}:${minutes}`;
 }
 
-async function fetchForecast() {
-    const response = await fetch(forecastAPIURL);
-    const data = await response.json();
-    displayForecast(data);
+async function getWeatherForecast() {
+    try {
+        const response = await fetch(forecastapiURL);
+        const data = await response.json();
+
+        const forecastCard = document.getElementById('forecastCard');
+
+        const filteredData = data.list.filter(item => {
+            const forecastDate = new Date(item.dt * 1000);
+            return forecastDate.getHours() === 9;
+        });
+
+        for (let i = 1; i <= 3; i++) {
+            const forecastItem = document.createElement('section');
+            const forecastDate = new Date(data.list[i * 8].dt * 1000);
+            const forecastWeather = data.list[i * 8].weather[0];
+
+            forecastItem.innerHTML = `
+                <p>Date: ${forecastDate.toLocaleDateString()}</p>
+                <img src="http://openweathermap.org/img/wn/${forecastWeather.icon}.png" alt="Icon">
+                <p>Description: ${forecastWeather.description}<p>
+                `;
+
+                forecastCard.appendChild(forecastItem);
+        }
+    } catch (error) {
+        console.error('Error fetching weather data:', error);
+    }
 }
 
-fetchForecast();
+getWeatherForecast();

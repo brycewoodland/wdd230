@@ -39,6 +39,14 @@
         padding: 0.5rem; 
     }
 
+    #sanDiegoCard img, #malibuCard img, #santaBarbaraCard img {
+        width: auto;
+    }
+
+    #carlsbadCard img {
+        width: auto;
+    }
+
     /*Hamburger Menu */
     .menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing {
         display: none;
