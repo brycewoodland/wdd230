@@ -131,4 +131,43 @@
     #nav-menu {
         display: flex;
     }
+
+    /* Order Confirmation */
+
+    #main-orderconfirmation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #detailsCard {
+        grid-column: 1 / 3;
+    }
+
+    #orderCard {
+        grid-column: 1 / 2;
+    }
+
+    #healthCard {
+        grid-column: 2 / 3;
+    }
+
+    #reviewCard {
+        grid-column: 1 / 3;
+    }
+
+    #reviewCard ol li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
+        padding: 0.25rem;
+    }
+
+    #reviewCard ol li a {
+        margin-left: 10px;
+    }
+
+    #reviewCard p {
+        text-align: center;
+    }
 }

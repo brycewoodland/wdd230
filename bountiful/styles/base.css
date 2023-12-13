@@ -117,6 +117,7 @@ body {
 #hero-overlay p {
     color: var(--background-color);
     font-size: 0.8em;
+    padding: 0.5rem;
 }
 #callToAction {
     background-color: var(--header-text-color);
@@ -308,4 +309,50 @@ label.myinput select:invalid {
 /* Order Confirmation Page */ 
 #detailsCard, #orderCard, #healthCard {
     text-align: center;
+    padding: 1rem;
+}
+#orderCard, #healthCard {
+    background-color: #FEECB3;
+    border: 1px solid var(--header-color);
+    box-shadow: 2px 2px 2px #C68E41;
+    margin: 20px;
+}
+#orderCard h2, #healthCard h2 {
+    text-decoration: underline;
+}
+#orderCard p, #healthCard p {
+    color: var(--text-color);
+    font-size: large;
+}
+#reviewCard {
+    text-align: left;
+    padding: 2rem;
+    background-color: #FEECB3;
+    color: var(--text-color);
+    border: 1px solid var(--header-color);
+    box-shadow: 2px 2px 2px #C68E41;
+    margin: 20px;
+}
+#reviewCard h2 {
+    color: var(--header-text-color);
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+#reviewCard a {
+    display: inline-block;
+    background-color: var(--header-text-color);
+    color: var(--background-color);
+    font-size: 1em;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #333333;
+    transition: background-color 0.3s, color 0.3s;
+}
+#reviewCard img {
+    width: 20px;
+    margin-right: 5px;
+}
+#reviewCard a:hover {
+    background-color: lightblue;
+    color: var(--hover-color);
 }
