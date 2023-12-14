@@ -1,5 +1,3 @@
-const currentDate = new Date().toLocaleDateString();
-
 let url = new URL(window.location);
 let params = url.searchParams;
 
@@ -7,22 +5,30 @@ for (const p of params) {
     console.log(p);
 }
 
-async function getFruitNameById(fruitId) {
-    const response = await fetch('fruits.json');
-    const fruitsData = await response.json();
+async function updateOrderCard() {
+    const currentDate = new Date().toLocaleDateString();
 
-    const fruit = fruitsData.find(f => f.id.toString() === fruitId);
-    return fruit ? fruit.name : 'Unknown Fruit';
+    document.querySelector('#orderDate').textContent = currentDate;
+    document.querySelector('#yourname').textContent = params.get("firstName");
+    document.querySelector('#email').textContent = params.get("email");
+    document.querySelector('#phone').textContent = params.get("phoneNumber");
+
+    try {
+        const fruit1Name = await getFruitNameById(params.get("fruit1"));
+        const fruit2Name = await getFruitNameById(params.get("fruit2"));
+        const fruit3Name = await getFruitNameById(params.get("fruit3"));
+
+        document.querySelector('#fruit1').textContent = fruit1Name;
+        document.querySelector('#fruit2').textContent = fruit2Name;
+        document.querySelector('#fruit3').textContent = fruit3Name;
+
+        document.querySelector('#specialinstructions').textContent = params.get("specialInstructions");
+    } catch (error) {
+        console.error('Error updating order card:', error);
+    }
 }
 
-document.querySelector('#orderDate').textContent = currentDate;
-document.querySelector('#yourname').textContent = params.get("firstName");
-document.querySelector('#email').textContent = params.get("email");
-document.querySelector('#phone').textContent = params.get("phoneNumber");
-document.querySelector('#fruit1').textContent = getFruitNameById(params.get("fruit1"));
-document.querySelector('#fruit2').textContent = getFruitNameById(params.get("fruit2"));
-document.querySelector('#fruit3').textContent = getFruitNameById(params.get("fruit3"));
-document.querySelector('#specialinstructions').textContent = params.get("specialInstructions");
+updateOrderCard();
 
 async function fetchNutritionalInfo(fruitId) {
     const response = await fetch("./data/fruit.json");

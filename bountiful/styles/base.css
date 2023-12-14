@@ -117,7 +117,6 @@ body {
 #hero-overlay p {
     color: var(--background-color);
     font-size: 0.8em;
-    padding: 0.5rem;
 }
 #callToAction {
     background-color: var(--header-text-color);
