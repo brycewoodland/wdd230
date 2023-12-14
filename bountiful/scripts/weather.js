@@ -63,7 +63,7 @@ async function getWeatherForecast() {
 
             forecastItem.innerHTML = `
                 <p>Date: ${forecastDate.toLocaleDateString()}</p>
-                <img src="http://openweathermap.org/img/wn/${forecastWeather.icon}.png" alt="Icon">
+                <img src="https://openweathermap.org/img/wn/${forecastWeather.icon}.png" alt="Icon">
                 <p>Description: ${forecastWeather.description}<p>
                 `;
 
